@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>parcial</title>
+</head>
+<body>
+    <style>
+        body{background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);}
+
+    </style>
+<div class="container">
+    <section class="section1">
+        <h1>Welcome to Our Landing Page!</h1>
+        <p>
+            We are thrilled to have you here. Explore our site to discover awesome features and learn more about what we offer.
+        </p>
+        <a href="#learn-more" style=" text-decoration: none; font-weight: bold;">Ver mas</a>
+    </section>
+
+<section class="section1"  style="margin-top: 2rem;">
+    <h1>Registro</h1>
+    <form autocomplete="off" method="POST" action="procesar_formulario.php">
+        <label style="color:white; font-weight:bold;">Nombre:
+            <input type="text" name="nombre" id="nombre" required style="margin-left:10px; padding:4px; border-radius:4px; border: 1px solid #ccc;">
+        </label>
+        <label style="color:white; font-weight:bold;">Email:
+            <input type="email" name="email" id="email" required style="margin-left:10px; padding:4px; border-radius:4px; border: 1px solid #ccc;">
+        </label>
+        <label style="color:white; font-weight:bold;">Nombre de Producto:
+            <input type="text" name="producto" id="producto" required style="margin-left:10px; padding:4px; border-radius:4px; border: 1px solid #ccc;">
+        </label>
+        <label style="color:white; font-weight:bold;">Mes del año:
+            <select name="mes" id="mes" required style="margin-left:10px; padding:4px; border-radius:4px; border: 1px solid #ccc;">
+                <option value="">Seleccione un mes</option>
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+        </label>
+        <label style="color:white; font-weight:bold;">Cantidad:
+            <input type="number" name="cantidad" id="cantidad" min="1" required style="margin-left:10px; padding:4px; border-radius:4px; border: 1px solid #ccc; width:80px;">
+        </label>
+        <label style="color:white; font-weight:bold; display: flex; align-items: center;">
+            <input type="checkbox" id="terminos" name="terminos" style="margin-right:10px;">
+            Acepto Términos y Condiciones
+        </label>
+        <button type="submit" style="padding:8px 24px; border-radius:6px; border:none; color:#090979; font-size:1.1rem; font-weight:bold; background:rgb(0, 212, 255); cursor:pointer; margin-top:10px;">Enviar</button>
+        <span id="msgError" style="color: #ff3b3b; font-weight:bold; display:none;"></span>
+        <span id="msgSuccess" style="color: #39ff80; font-weight:bold; display:none;"></span>
+    </form>
+    
+</section>
+</div>
+</body>
+</html>
